@@ -275,7 +275,7 @@
       {
         "file": "assets/8BitOperatorPlus8Regular_Edited3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/8BitOperatorPlus8Regular_Edited3.png\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "8BitOperatorPlus8Regular_Edited3.png",
         "smoothed": false,
         "userAdded": true
@@ -996,13 +996,14 @@
         {
           "angle": 357,
           "customSize": true,
-          "height": 127,
+          "depth": 2,
+          "height": 284,
           "layer": "Title",
           "name": "Title",
           "persistentUuid": "e085a9cb-0111-4e77-9c02-bf87d81facd0",
-          "width": 379,
-          "x": 197,
-          "y": 23,
+          "width": 848,
+          "x": 41,
+          "y": 54,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -1183,9 +1184,9 @@
           "effects": [],
           "behaviors": [],
           "content": {
-            "text": "Title",
+            "text": "DONT SIMP <3",
             "opacity": 255,
-            "scale": 6,
+            "scale": 5,
             "fontSize": 20,
             "tint": "255;255;255",
             "bitmapFontResourceName": "8BitOperatorPlus8Regular_Edited.fnt",
@@ -2202,7 +2203,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 1.0615714305220083,
+        "zoomFactor": 1.4790395861757548,
         "windowMask": false,
         "selectedLayer": ""
       },
