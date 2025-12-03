@@ -798,6 +798,86 @@
         "name": "NewSprite",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Gun2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gun1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Gun3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Gun2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bullet2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Bullet2.png\"}",
+        "name": "Bullet",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bullet2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bullet2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bullet3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Bullet3.png\"}",
+        "name": "Bullet3",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bullet4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Bullet4.png\"}",
+        "name": "Bullet4",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bullet5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bullet5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Bullet6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bullet6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EXPPoint.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EXPPoint",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/EXPPoint3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "EXPPoint3",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -926,7 +1006,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 0.48537647781851934,
+        "zoomFactor": 0.5017435328637435,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -2293,7 +2373,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 1.4790395861757548,
+        "zoomFactor": 1.8655255482570359,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -3256,16 +3336,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Gun1",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "Gun1.png",
+                      "image": "Gun2",
                       "points": [
                         {
                           "name": "BulletPoint",
@@ -3293,7 +3374,7 @@
           ]
         },
         {
-          "adaptCollisionMaskAutomatically": false,
+          "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "Bullet",
           "type": "Sprite",
@@ -3303,45 +3384,52 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "Bullet",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "looping": true,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.11,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Bullet.png",
-                      "points": [],
+                      "image": "Bullet6",
+                      "points": [
+                        {
+                          "name": "Point",
+                          "x": 6,
+                          "y": 32
+                        }
+                      ],
                       "originPoint": {
                         "name": "origine",
-                        "x": 4,
-                        "y": 4
+                        "x": 5.5,
+                        "y": 6
                       },
                       "centerPoint": {
-                        "automatic": true,
+                        "automatic": false,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 19.5,
+                        "y": 21
                       },
                       "customCollisionMask": [
                         [
                           {
                             "x": 2,
-                            "y": 3
+                            "y": 1
                           },
                           {
-                            "x": 6,
-                            "y": 3
+                            "x": 39,
+                            "y": 1
                           },
                           {
-                            "x": 6,
-                            "y": 5
+                            "x": 39,
+                            "y": 18
                           },
                           {
                             "x": 2,
-                            "y": 5
+                            "y": 18
                           }
                         ]
                       ]
@@ -4867,8 +4955,8 @@
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "EXPPoint2",
+                      "hasCustomCollisionMask": true,
+                      "image": "EXPPoint3",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
