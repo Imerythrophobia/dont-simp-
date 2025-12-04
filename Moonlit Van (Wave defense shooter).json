@@ -878,6 +878,14 @@
         "name": "EXPPoint3",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/SpiderDropping2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "SpiderDropping",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -5268,16 +5276,17 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "SpiderDropping",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "SpiderDropping.png",
+                      "image": "SpiderDropping",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5294,19 +5303,19 @@
                         [
                           {
                             "x": 8,
-                            "y": 10
+                            "y": 11
                           },
                           {
                             "x": 16,
-                            "y": 10
+                            "y": 11
                           },
                           {
                             "x": 16,
-                            "y": 17
+                            "y": 16
                           },
                           {
                             "x": 8,
-                            "y": 17
+                            "y": 16
                           }
                         ]
                       ]
