@@ -886,6 +886,38 @@
         "name": "SpiderDropping",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/TheRoom4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "TheRoom2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewPanelSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewPanelSprite",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewPanelSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "NewPanelSprite2",
+        "smoothed": false,
+        "userAdded": false
       }
     ]
   },
@@ -2381,7 +2413,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 1.3841198046306997,
+        "zoomFactor": 2.777396552483581,
         "windowMask": false,
         "selectedLayer": ""
       },
@@ -2998,16 +3030,17 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "TheRoom2",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "TheRoom2.png",
+                      "image": "TheRoom2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5518,6 +5551,22 @@
             "CornerRadius": 8,
             "Padding": 5
           }
+        },
+        {
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "NewPanelSprite",
+          "rightMargin": 0,
+          "texture": "NewPanelSprite2",
+          "tiled": false,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "objectsFolderStructure": {
@@ -5531,6 +5580,9 @@
               },
               {
                 "objectName": "Floor"
+              },
+              {
+                "objectName": "NewPanelSprite"
               }
             ]
           },
