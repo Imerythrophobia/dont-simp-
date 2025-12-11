@@ -7633,6 +7633,15 @@
                 },
                 {
                   "type": {
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "SpiderEnemy",
+                    "\"#00ff00\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
@@ -7650,6 +7659,15 @@
                     "Enemy",
                     "=",
                     "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"hit\""
                   ]
                 }
               ],
@@ -7679,6 +7697,33 @@
                         "Resizable",
                         "=",
                         "Enemy.Health::Health() / Enemy.Health::MaxHealth() * 12"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"hit\"",
+                        ">=",
+                        "0.5"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ChangeColor"
+                      },
+                      "parameters": [
+                        "SpiderEnemy",
+                        "\"ffffff\""
                       ]
                     }
                   ]
