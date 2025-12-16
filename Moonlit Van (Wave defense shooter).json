@@ -2868,7 +2868,7 @@
               "folded": true,
               "name": "Power",
               "type": "number",
-              "value": 1
+              "value": 5
             }
           ]
         },
@@ -3134,7 +3134,7 @@
           "persistentUuid": "938aa876-c8a4-486b-a27f-0cc15e8e0629",
           "width": 0,
           "x": 192,
-          "y": 88,
+          "y": 104,
           "zOrder": 16,
           "numberProperties": [],
           "stringProperties": [],
