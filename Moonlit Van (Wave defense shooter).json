@@ -6700,7 +6700,22 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "BoidsMovement",
+              "type": "BoidsMovement::BoidsMovement",
+              "MaxSpeed": 360,
+              "MaxAcceleration": 720,
+              "ShouldRotate": true,
+              "CohesionRadius": 64,
+              "AlignmentRadius": 48,
+              "SeparationRadius": 32,
+              "CohesionWeight": 1,
+              "AlignmentWeight": 1,
+              "SeparationWeight": 2,
+              "CollisionLayer": 0
+            }
+          ],
           "animations": [
             {
               "name": "hart tnt",
@@ -9549,6 +9564,48 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "SpiderEnemy",
+                "Player",
+                "120",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "NewSprite3",
+                "SpiderEnemy.X()",
+                "SpiderEnemy.Y()",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BoidsMovement::BoidsMovement::MoveToObject"
+              },
+              "parameters": [
+                "NewSprite3",
+                "BoidsMovement",
+                "Player",
+                "1",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
